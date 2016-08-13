@@ -9,7 +9,7 @@ config.file('conf/config.json');
 var logger = require('./lib/commons/logger');
 var app = require('./lib/application');
 
-/*var database = require('./lib/commons/database');
+var database = require('./lib/commons/database');
 database.connect(config.get('mongo:connection'), function(err) {
   if (err) {
     logger.error('Shutdown the application because an error ocurred ' +
@@ -18,7 +18,7 @@ database.connect(config.get('mongo:connection'), function(err) {
     process.exit(1);
   }
 });
-*/
+
 var shutdown = function() {
   logger.warn('Server receive signal to shutdown.');
   process.exit(0);
@@ -32,7 +32,7 @@ process.on('SIGTERM', shutdown)
   })
   .on('exit', function(code) {
     logger.info('Node process exit with code:', code);
-    //database.close();
+    database.close();
   });
 
 var server = app.listen(config.get('server:port'), function(err) {

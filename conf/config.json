@@ -36,6 +36,6 @@
     },
 
     "mongo": {
-      "connection": "mongodb://localhost/application_test"
+      "connection": "mongodb://localhost/project-organizer"
     }
 }
