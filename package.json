@@ -6,13 +6,15 @@
   "homepage": "https://github.com/ThalitaPinheiro/Curriculo",
   "main": "index.js",
   "scripts": {
-    "build": "rm -rf dist && rm -rf node_modules && npm i --production && mkdir dist && mkdir dist/project-organizer && cp index.js dist/project-organizer/ && cp package.json dist/project-organizer/ && cp -r node_modules dist/project-organizer/node_modules",
+    "build": "rm -rf dist && mkdir dist && mkdir dist/project-organizer && cp index.js dist/project-organizer/ && cp package.json dist/project-organizer/ && cd dist && npm i --production",
     "check": "./node_modules/.bin/eslint ./**.js utils test;",
     "mocha": "./node_modules/mocha/bin/mocha --recursive",
     "start": "node index.js",
+    "debug": "./node_modules/.bin/mocha --recursive --debug-brk",
     "coverage": "istanbul cover --print both _mocha -- -R spec --recursive",
     "pretest": "npm run check",
-    "test": "npm run coverage"
+    "test": "export NODE_ENV=test && npm run coverage",
+    "posttest": "./node_modules/.bin/istanbul check-coverage --statements 0 --branches 0 --functions 0"
   },
   "dependencies": {
     "async": "~1.5.x",
