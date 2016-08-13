@@ -6,9 +6,13 @@
   "homepage": "https://github.com/ThalitaPinheiro/Curriculo",
   "main": "index.js",
   "scripts": {
-    "check": "cd node_modules/jshint/bin/ && jshint --reporter ./node_modules/jshint-stylish/index.js test/* lib/*",
-    "test": "cd node_modules/mocha/bin/  && mocha --recursive",
-    "start": "node index.js"
+    "build": "rm -rf dist && rm -rf node_modules && npm i --production && mkdir dist && mkdir dist/project-organizer && cp index.js dist/project-organizer/ && cp package.json dist/project-organizer/ && cp -r node_modules dist/project-organizer/node_modules",
+    "check": "./node_modules/.bin/eslint ./**.js utils test;",
+    "mocha": "./node_modules/mocha/bin/mocha --recursive",
+    "start": "node index.js",
+    "coverage": "istanbul cover --print both _mocha -- -R spec --recursive",
+    "pretest": "npm run check",
+    "test": "npm run coverage"
   },
   "dependencies": {
     "async": "~1.5.x",
@@ -24,6 +28,8 @@
     "winston-daily-rotate-file": "~1.0.x"
   },
   "devDependencies": {
+    "eslint": "^2.11.1",
+    "istanbul": "^0.4.3",
     "chai": "~3.5.x",
     "chance": "~1.0.x",
     "eslint": "~2.3.x",
