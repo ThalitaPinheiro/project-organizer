@@ -6,7 +6,7 @@
   "homepage": "https://github.com/ThalitaPinheiro/Curriculo",
   "main": "index.js",
   "scripts": {
-    "build": "rm -rf dist && mkdir dist && mkdir dist/project-organizer && cp index.js dist/project-organizer/ && cp package.json dist/project-organizer/ && cd dist && npm i --production",
+    "build": "rm -rf dist && mkdir dist && mkdir dist/project-organizer && cp index.js dist/project-organizer/ && cp docs.js dist/project-organizer/ && cp -r api-docs dist/project-organizer/api-docs && cp package.json dist/project-organizer/ && cd dist && npm i --production",
     "check": "./node_modules/.bin/eslint ./**.js utils test;",
     "mocha": "./node_modules/mocha/bin/mocha --recursive",
     "start": "node index.js",
