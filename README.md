@@ -7,23 +7,23 @@ As configuraçoes pessoais podem ser setadas no arquivo de configuraçao, dento 
 A aplicaçao roda, por padrao na porta 3000.
 
 ## Instruçoes
-* Para a instalaçao das dependencias do projeto, execute: 
+* Para a instalaçao das dependencias do projeto, execute:
 ```
 npm install
 ```
 
-* Para a execuçao dos testes automatizados do projeto, execute: 
+* Para a execuçao dos testes automatizados do projeto, execute:
 ```
 npm test
 ```
+Essa execuçao de testes gera um relatorio de coverage, que demonstra graficamente a cobertura de codigo atingida pelos testes.
 
-* Para gerar uma pasta "dist" com o conteúdo publicavel do sistema, execute 
+* Para gerar uma pasta "dist" com o conteúdo publicavel do sistema, execute
 ```
 npm build
 ```
 
-* Para executar a api, execute 
+* Para executar a api, execute
 ```
 npm start
 ```
-
