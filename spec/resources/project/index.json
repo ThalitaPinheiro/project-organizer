@@ -1,0 +1,10 @@
+{
+  "path": "/projects",
+  "description": "Project methods",
+  "consumes" : [
+    "application/json"
+  ],
+  "produces" : [
+    "application/json"
+  ]
+}

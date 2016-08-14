@@ -1,0 +1,23 @@
+{
+    "method": "DELETE",
+    "summary": "Delete a project",
+    "type": "void",
+    "nickname": "deleteProject",
+    "parameters": [{
+        "name": "projectName",
+        "type": "string",
+        "paramType": "path",
+        "required": true,
+        "description": "Name of project that will be deleted"
+    }],
+    "responseMessages": [{
+        "code": 200,
+        "message": "Project deleted!"
+    }, {
+        "code": 400,
+        "message": "Error deleting Project: Project not found"
+    }, {
+        "code": 500,
+        "message": "Internal Error"
+    }]
+}

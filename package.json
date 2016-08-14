@@ -14,7 +14,7 @@
     "coverage": "istanbul cover --print both _mocha -- -R spec --recursive",
     "pretest": "npm run check",
     "test": "export NODE_ENV=test && npm run coverage",
-    "posttest": "./node_modules/.bin/istanbul check-coverage --statements 0 --branches 0 --functions 0"
+    "posttest": "./node_modules/.bin/istanbul check-coverage --statements 60 --branches 60 --functions 60"
   },
   "dependencies": {
     "async": "~1.5.x",
@@ -25,6 +25,7 @@
     "morgan": "~1.7.x",
     "nconf": "~0.8.x",
     "request": "~2.69.x",
+    "swagger-framework": "~0.15.0",
     "tv4": "~1.2.x",
     "winston": "~2.2.x",
     "winston-daily-rotate-file": "~1.0.x"

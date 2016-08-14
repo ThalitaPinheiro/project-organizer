@@ -49,13 +49,13 @@ describe('POST projects integration tests - ', function() {
     });
   });
 
-  it('Should return 404 cause the post uri is not found', function(done) {
+  it('Should return 405 cause the post uri is not found and the method is not allowed', function(done) {
     request(app)
     .post('/projects/something')
     .send({})
     .end(function(err, res) {
       assert.isNull(err);
-      assert.equal(404, res.statusCode);
+      assert.equal(405, res.statusCode);
       done();
     });
   });

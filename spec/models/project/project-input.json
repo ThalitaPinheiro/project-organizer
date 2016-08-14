@@ -1,0 +1,10 @@
+{
+    "id": "projectInput",
+    "required": ["name"],
+    "properties": {
+        "name": {
+            "type": "string",
+            "minLength": 1
+        }
+    }
+}

@@ -1,0 +1,10 @@
+{
+	"id":"deleteProject",
+    "required": ["projectName"],
+    "properties":{
+      "projectName": {
+				"type":"string",
+				"minLength":1
+			}
+    }
+}

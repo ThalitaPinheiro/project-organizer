@@ -35,6 +35,7 @@ process.on('SIGTERM', shutdown)
     database.close();
   });
 
+
 var server = app.listen(config.get('server:port'), function(err) {
   if (err) {
     logger.error('Error on listen port. ', err.message);

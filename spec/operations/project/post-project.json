@@ -1,0 +1,22 @@
+{
+    "method": "POST",
+    "summary": "Add new project",
+    "type": "void",
+    "nickname": "postProject",
+    "parameters": [{
+        "name": "body",
+        "paramType": "body",
+        "type": "projectInput",
+        "required": true
+    }],
+    "responseMessages": [{
+        "code": 201,
+        "message": "Project Inserted"
+    }, {
+        "code": 400,
+        "message": "Bad Request"
+    }, {
+        "code": 500,
+        "message": "Internal Error"
+    }]
+}
