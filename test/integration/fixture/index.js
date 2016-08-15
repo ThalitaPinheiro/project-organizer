@@ -12,7 +12,7 @@ function generateTasks(options) {
     descripion: chance.paragraph(),
     owner: chance.name(),
     dueDate: chance.date(),
-    done: true
+    done: false
   };
 };
 module.exports = {
