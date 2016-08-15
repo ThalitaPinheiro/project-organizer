@@ -17,7 +17,7 @@ before(function(done) {
 after(function(done) {
   async.waterfall([
     function(callbackDrop) {
-      db.dropDatabase(callbackDrop);
+      // db.dropDatabase(callbackDrop);
       callbackDrop();
     },
     function(callbackClose) {
