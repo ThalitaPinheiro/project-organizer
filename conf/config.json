@@ -12,11 +12,11 @@
       },
 
       "file": {
-        "level": "info",
+        "level": "warn",
         "silent": false,
         "colorize": true,
         "timestamp": true,
-        "filename": "log/",
+        "filename": "log/log",
         "maxsize": "100000000",
         "datePattern": "-yyyy-MM-dd.log",
         "json": false
