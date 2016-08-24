@@ -1,6 +1,7 @@
 # project-organizer
 
 [![Travis build status](https://img.shields.io/travis/ThalitaPinheiro/project-organizer/master.svg)](https://travis-ci.org/ThalitaPinheiro/project-organizer) 
+[![BitHound Score](https://www.bithound.io/github/ThalitaPinheiro/project-organizer/badges/score.svg)](https://www.bithound.io/github/ThalitaPinheiro/project-organizer) 
 [![JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 [![GitHub license](https://img.shields.io/github/license/ThalitaPinheiro/project-organizer.svg)](https://github.com/ThalitaPinheiro/project-organizer)
 [![GitHub issues](https://img.shields.io/github/issues/ThalitaPinheiro/project-organizer.svg)](https://github.com/ThalitaPinheiro/project-organizer)
