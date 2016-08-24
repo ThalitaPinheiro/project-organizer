@@ -16,6 +16,7 @@ node_modules
 
 # Optional npm cache directory
 .npm
+.stryker-tmp
 
 # Dist directory
 dist

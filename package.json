@@ -6,6 +6,7 @@
   "homepage": "https://github.com/ThalitaPinheiro/Curriculo",
   "main": "index.js",
   "scripts": {
+    "stryker": "stryker -c stryker.conf.js",
     "build": "rm -rf dist && mkdir dist && mkdir dist/project-organizer && cp index.js dist/project-organizer/index.js && cp docs.js dist/project-organizer/docs.js && cp -r lib dist/project-organizer/lib && cp -r api-docs dist/project-organizer/api-docs && cp -r spec dist/project-organizer/spec && cp -r conf dist/project-organizer/conf && cp package.json dist/project-organizer/package.json && cd dist && npm i --production &&  cd project-organizer/ && mkdir log",
     "check": "./node_modules/.bin/eslint ./**.js utils test;",
     "mocha": "./node_modules/mocha/bin/mocha --recursive",
@@ -31,16 +32,19 @@
     "winston-daily-rotate-file": "~1.0.x"
   },
   "devDependencies": {
-    "eslint": "^2.11.1",
-    "istanbul": "^0.4.3",
     "chai": "~3.5.x",
     "chance": "~1.0.x",
     "eslint": "~2.3.x",
+    "istanbul": "^0.4.3",
     "jshint": "~2.9.x",
     "jshint-stylish": "~2.0.x",
     "mocha": "~2.4.x",
     "nock": "~8.0.x",
     "rewire": "~2.5.x",
+    "stryker": "^0.4.2",
+    "stryker-api": "^0.2.0",
+    "stryker-html-reporter": "^0.2.0",
+    "stryker-mocha-runner": "^0.1.0",
     "supertest": "~1.2.x"
   }
 }
