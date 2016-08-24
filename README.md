@@ -1,3 +1,6 @@
+[![GitHub license](https://img.shields.io/github/license/ThalitaPinheiro/project-organizer.svg)](https://github.com/ThalitaPinheiro/project-organizer)
+
+
 # project-organizer
 
 Trata-se de um organizador de projetos. Cada projeto é composto por tasks, que devem ser adicionadas posteriormente ao projeto.
