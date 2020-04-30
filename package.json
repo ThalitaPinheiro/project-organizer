@@ -15,7 +15,9 @@
     "coverage": "istanbul cover --print both _mocha -- -R spec --recursive",
     "pretest": "npm run check",
     "test": "export NODE_ENV=test && npm run coverage",
-    "posttest": "./node_modules/.bin/istanbul check-coverage --statements 60 --branches 60 --functions 60"
+    "posttest": "./node_modules/.bin/istanbul check-coverage --statements 60 --branches 60 --functions 60",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "async": "~1.5.x",
@@ -29,7 +31,8 @@
     "swagger-framework": "~0.15.0",
     "tv4": "~1.2.x",
     "winston": "~2.2.x",
-    "winston-daily-rotate-file": "~1.0.x"
+    "winston-daily-rotate-file": "~1.0.x",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "chai": "~3.5.x",
@@ -46,5 +49,6 @@
     "stryker-html-reporter": "^0.2.0",
     "stryker-mocha-runner": "^0.1.0",
     "supertest": "~1.2.x"
-  }
+  },
+  "snyk": true
 }
