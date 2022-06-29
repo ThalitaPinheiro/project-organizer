@@ -25,7 +25,7 @@
     "mongodb": "~2.1.x",
     "morgan": "~1.7.x",
     "nconf": "~0.8.x",
-    "request": "~2.69.x",
+    "request": "~2.87.0",
     "swagger-framework": "~0.15.0",
     "tv4": "~1.2.x",
     "winston": "~2.2.x",
